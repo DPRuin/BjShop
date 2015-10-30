@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  BJHomeViewController.h
 //  BjShop
 //
 //  Created by BaiFaHui on 15/10/30.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface BJHomeViewController : UIViewController
 
 @end
-
