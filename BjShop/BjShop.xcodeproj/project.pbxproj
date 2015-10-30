@@ -16,9 +16,6 @@
 		E8481A911BE31378005FB8CE /* BJHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8481A8F1BE31378005FB8CE /* BJHomeViewController.m */; };
 		E8481A921BE31378005FB8CE /* BJHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8481A901BE31378005FB8CE /* BJHomeViewController.xib */; };
 		E8481A951BE3144C005FB8CE /* BJNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8481A941BE3144C005FB8CE /* BJNavigationController.m */; };
-		E87468901BE351D800B7C6B4 /* HMAnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = E874688B1BE351D800B7C6B4 /* HMAnimatedTransitioning.m */; };
-		E87468911BE351D800B7C6B4 /* HMPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E874688D1BE351D800B7C6B4 /* HMPresentationController.m */; };
-		E87468921BE351D800B7C6B4 /* HMTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = E874688F1BE351D800B7C6B4 /* HMTransition.m */; };
 		E87468951BE3525E00B7C6B4 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = E87468941BE3525E00B7C6B4 /* UIView+Extension.m */; };
 		E87468971BE3526700B7C6B4 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = E87468961BE3526700B7C6B4 /* Foundation+Log.m */; };
 		E874689B1BE3528300B7C6B4 /* UIView+AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E874689A1BE3528300B7C6B4 /* UIView+AutoLayout.m */; };
@@ -60,18 +57,11 @@
 		E8481A901BE31378005FB8CE /* BJHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BJHomeViewController.xib; sourceTree = "<group>"; };
 		E8481A931BE3144C005FB8CE /* BJNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJNavigationController.h; sourceTree = "<group>"; };
 		E8481A941BE3144C005FB8CE /* BJNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BJNavigationController.m; sourceTree = "<group>"; };
-		E874688A1BE351D800B7C6B4 /* HMAnimatedTransitioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMAnimatedTransitioning.h; sourceTree = "<group>"; };
-		E874688B1BE351D800B7C6B4 /* HMAnimatedTransitioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMAnimatedTransitioning.m; sourceTree = "<group>"; };
-		E874688C1BE351D800B7C6B4 /* HMPresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMPresentationController.h; sourceTree = "<group>"; };
-		E874688D1BE351D800B7C6B4 /* HMPresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMPresentationController.m; sourceTree = "<group>"; };
-		E874688E1BE351D800B7C6B4 /* HMTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMTransition.h; sourceTree = "<group>"; };
-		E874688F1BE351D800B7C6B4 /* HMTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMTransition.m; sourceTree = "<group>"; };
 		E87468931BE3525E00B7C6B4 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		E87468941BE3525E00B7C6B4 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		E87468961BE3526700B7C6B4 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
 		E87468991BE3528300B7C6B4 /* UIView+AutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AutoLayout.h"; sourceTree = "<group>"; };
 		E874689A1BE3528300B7C6B4 /* UIView+AutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AutoLayout.m"; sourceTree = "<group>"; };
-		E874689C1BE3584F00B7C6B4 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,7 +224,6 @@
 		E8481A771BE31146005FB8CE /* Home(首页) */ = {
 			isa = PBXGroup;
 			children = (
-				E87468891BE351D800B7C6B4 /* Modal */,
 				E8481A781BE31146005FB8CE /* Controller */,
 				E8481A791BE31146005FB8CE /* Model */,
 				E8481A7A1BE31146005FB8CE /* View */,
@@ -384,20 +373,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		E87468891BE351D800B7C6B4 /* Modal */ = {
-			isa = PBXGroup;
-			children = (
-				E874689C1BE3584F00B7C6B4 /* Singleton.h */,
-				E874688A1BE351D800B7C6B4 /* HMAnimatedTransitioning.h */,
-				E874688B1BE351D800B7C6B4 /* HMAnimatedTransitioning.m */,
-				E874688C1BE351D800B7C6B4 /* HMPresentationController.h */,
-				E874688D1BE351D800B7C6B4 /* HMPresentationController.m */,
-				E874688E1BE351D800B7C6B4 /* HMTransition.h */,
-				E874688F1BE351D800B7C6B4 /* HMTransition.m */,
-			);
-			path = Modal;
-			sourceTree = "<group>";
-		};
 		E87468981BE3528300B7C6B4 /* UIView-AutoLayout */ = {
 			isa = PBXGroup;
 			children = (
@@ -539,10 +514,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8481A8D1BE31146005FB8CE /* main.m in Sources */,
-				E87468921BE351D800B7C6B4 /* HMTransition.m in Sources */,
 				E8481A911BE31378005FB8CE /* BJHomeViewController.m in Sources */,
-				E87468911BE351D800B7C6B4 /* HMPresentationController.m in Sources */,
-				E87468901BE351D800B7C6B4 /* HMAnimatedTransitioning.m in Sources */,
 				E874689B1BE3528300B7C6B4 /* UIView+AutoLayout.m in Sources */,
 				E87468971BE3526700B7C6B4 /* Foundation+Log.m in Sources */,
 				E8481A8C1BE31146005FB8CE /* AppDelegate.m in Sources */,
