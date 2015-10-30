@@ -7,8 +7,6 @@
 //
 
 #import "BJHomeViewController.h"
-#import "BJMenuViewController.h"
-#import "UIViewController+MMDrawerController.h"
 
 @interface BJHomeViewController ()
 
