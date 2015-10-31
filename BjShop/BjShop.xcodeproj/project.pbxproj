@@ -13,14 +13,15 @@
 		E8481A611BE30545005FB8CE /* BjShopUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E8481A601BE30545005FB8CE /* BjShopUITests.m */; };
 		E8481A8C1BE31146005FB8CE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E8481A811BE31146005FB8CE /* AppDelegate.m */; };
 		E8481A8D1BE31146005FB8CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8481A821BE31146005FB8CE /* main.m */; };
-		E8481A911BE31378005FB8CE /* BJHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8481A8F1BE31378005FB8CE /* BJHomeViewController.m */; };
-		E8481A921BE31378005FB8CE /* BJHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8481A901BE31378005FB8CE /* BJHomeViewController.xib */; };
 		E8481A951BE3144C005FB8CE /* BJNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8481A941BE3144C005FB8CE /* BJNavigationController.m */; };
 		E87468951BE3525E00B7C6B4 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = E87468941BE3525E00B7C6B4 /* UIView+Extension.m */; };
 		E87468971BE3526700B7C6B4 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = E87468961BE3526700B7C6B4 /* Foundation+Log.m */; };
 		E874689B1BE3528300B7C6B4 /* UIView+AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E874689A1BE3528300B7C6B4 /* UIView+AutoLayout.m */; };
 		E88F03881BE4870D008407BA /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = E88F03871BE4870D008407BA /* UIBarButtonItem+Extension.m */; };
 		E88F038B1BE48EAD008407BA /* BJConst.m in Sources */ = {isa = PBXBuildFile; fileRef = E88F038A1BE48EAD008407BA /* BJConst.m */; };
+		E88F04611BE4B277008407BA /* BJHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E88F045F1BE4B277008407BA /* BJHomeViewController.m */; };
+		E88F04621BE4B277008407BA /* BJHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E88F04601BE4B277008407BA /* BJHomeViewController.xib */; };
+		E88F04651BE4B91D008407BA /* BJScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = E88F04641BE4B91D008407BA /* BJScrollView.m */; };
 		E89144011BE46D2E00CEFBD2 /* BJCategaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E89143FF1BE46D2E00CEFBD2 /* BJCategaryViewController.m */; };
 		E89144021BE46D2E00CEFBD2 /* BJCategaryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E89144001BE46D2E00CEFBD2 /* BJCategaryViewController.xib */; };
 		E89144451BE471BF00CEFBD2 /* BJShoppingCartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E89144431BE471BF00CEFBD2 /* BJShoppingCartViewController.m */; };
@@ -62,9 +63,6 @@
 		E8481A801BE31146005FB8CE /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E8481A811BE31146005FB8CE /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		E8481A821BE31146005FB8CE /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E8481A8E1BE31378005FB8CE /* BJHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJHomeViewController.h; sourceTree = "<group>"; };
-		E8481A8F1BE31378005FB8CE /* BJHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BJHomeViewController.m; sourceTree = "<group>"; };
-		E8481A901BE31378005FB8CE /* BJHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BJHomeViewController.xib; sourceTree = "<group>"; };
 		E8481A931BE3144C005FB8CE /* BJNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJNavigationController.h; sourceTree = "<group>"; };
 		E8481A941BE3144C005FB8CE /* BJNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BJNavigationController.m; sourceTree = "<group>"; };
 		E87468931BE3525E00B7C6B4 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
@@ -77,6 +75,11 @@
 		E88F03891BE48EAD008407BA /* BJConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJConst.h; sourceTree = "<group>"; };
 		E88F038A1BE48EAD008407BA /* BJConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BJConst.m; sourceTree = "<group>"; };
 		E88F038C1BE48EEA008407BA /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		E88F045E1BE4B277008407BA /* BJHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJHomeViewController.h; sourceTree = "<group>"; };
+		E88F045F1BE4B277008407BA /* BJHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BJHomeViewController.m; sourceTree = "<group>"; };
+		E88F04601BE4B277008407BA /* BJHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BJHomeViewController.xib; sourceTree = "<group>"; };
+		E88F04631BE4B91D008407BA /* BJScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJScrollView.h; sourceTree = "<group>"; };
+		E88F04641BE4B91D008407BA /* BJScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BJScrollView.m; sourceTree = "<group>"; };
 		E89143FE1BE46D2E00CEFBD2 /* BJCategaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJCategaryViewController.h; sourceTree = "<group>"; };
 		E89143FF1BE46D2E00CEFBD2 /* BJCategaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BJCategaryViewController.m; sourceTree = "<group>"; };
 		E89144001BE46D2E00CEFBD2 /* BJCategaryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BJCategaryViewController.xib; sourceTree = "<group>"; };
@@ -176,6 +179,7 @@
 		E8481A6E1BE31146005FB8CE /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				E88F04141BE4AE4E008407BA /* 测试 */,
 				E89143FA1BE46C5000CEFBD2 /* ShoppingCart(购物车） */,
 				E89143F61BE46C3C00CEFBD2 /* Cheap（特实惠） */,
 				E89143F21BE46C3000CEFBD2 /* Categary(分类) */,
@@ -199,9 +203,9 @@
 		E8481A781BE31146005FB8CE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				E8481A8E1BE31378005FB8CE /* BJHomeViewController.h */,
-				E8481A8F1BE31378005FB8CE /* BJHomeViewController.m */,
-				E8481A901BE31378005FB8CE /* BJHomeViewController.xib */,
+				E88F045E1BE4B277008407BA /* BJHomeViewController.h */,
+				E88F045F1BE4B277008407BA /* BJHomeViewController.m */,
+				E88F04601BE4B277008407BA /* BJHomeViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -216,6 +220,8 @@
 		E8481A7A1BE31146005FB8CE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E88F04631BE4B91D008407BA /* BJScrollView.h */,
+				E88F04641BE4B91D008407BA /* BJScrollView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -322,6 +328,13 @@
 				E874689A1BE3528300B7C6B4 /* UIView+AutoLayout.m */,
 			);
 			path = "UIView-AutoLayout";
+			sourceTree = "<group>";
+		};
+		E88F04141BE4AE4E008407BA /* 测试 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "测试";
 			sourceTree = "<group>";
 		};
 		E89143F21BE46C3000CEFBD2 /* Categary(分类) */ = {
@@ -531,9 +544,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E891444B1BE4734000CEFBD2 /* BJMybjiaViewController.xib in Resources */,
+				E88F04621BE4B277008407BA /* BJHomeViewController.xib in Resources */,
 				E89144501BE4746D00CEFBD2 /* BJCheapViewController.xib in Resources */,
 				E89144021BE46D2E00CEFBD2 /* BJCategaryViewController.xib in Resources */,
-				E8481A921BE31378005FB8CE /* BJHomeViewController.xib in Resources */,
 				E8481A4B1BE30545005FB8CE /* LaunchScreen.storyboard in Resources */,
 				E8481A481BE30545005FB8CE /* Assets.xcassets in Resources */,
 				E89144461BE471BF00CEFBD2 /* BJShoppingCartViewController.xib in Resources */,
@@ -563,11 +576,12 @@
 			files = (
 				E88F03881BE4870D008407BA /* UIBarButtonItem+Extension.m in Sources */,
 				E891444A1BE4734000CEFBD2 /* BJMybjiaViewController.m in Sources */,
+				E88F04611BE4B277008407BA /* BJHomeViewController.m in Sources */,
+				E88F04651BE4B91D008407BA /* BJScrollView.m in Sources */,
 				E891444F1BE4746D00CEFBD2 /* BJCheapViewController.m in Sources */,
 				E89144011BE46D2E00CEFBD2 /* BJCategaryViewController.m in Sources */,
 				E88F038B1BE48EAD008407BA /* BJConst.m in Sources */,
 				E8481A8D1BE31146005FB8CE /* main.m in Sources */,
-				E8481A911BE31378005FB8CE /* BJHomeViewController.m in Sources */,
 				E874689B1BE3528300B7C6B4 /* UIView+AutoLayout.m in Sources */,
 				E87468971BE3526700B7C6B4 /* Foundation+Log.m in Sources */,
 				E8481A8C1BE31146005FB8CE /* AppDelegate.m in Sources */,

@@ -15,21 +15,14 @@
 #import "UIBarButtonItem+Extension.h"
 #import "UIView+AutoLayout.h"
 #import "UIView+Extension.h"
+#import "BJScrollView.h"
 
-@interface BJHomeViewController () <UISearchBarDelegate, UIScrollViewDelegate, UITableViewDataSource, UITableViewDelegate>
+@interface BJHomeViewController () <UISearchBarDelegate>
+@property (weak, nonatomic) IBOutlet UIScrollView *backgroundScrollView;
 /** 促销 */
-@property (weak, nonatomic) IBOutlet UIScrollView *promoScrollView;
+@property (nonatomic, weak) UIScrollView *promoScrollView;
 /** 商品 */
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
-/** 购物车按钮点击 */
-- (IBAction)shoppingCartClick:(UIButton *)sender;
-/** 我的彼佳按钮点击 */
-- (IBAction)myBjiaClick:(UIButton *)sender;
-/** 特实惠按钮点击 */
-- (IBAction)cheapClick:(UIButton *)sender;
-/** 分类按钮点击 */
-- (IBAction)categaryClick:(UIButton *)sender;
 
 @end
 
@@ -40,31 +33,20 @@
     // 初始化导航栏
     [self setupNavItem];
     
-    // 初始化促销:显示图片
-    [self setupPromoScrollView];
-
-
+    // 初始化首页内容
+    [self setupContent];
 }
 
 #pragma mark - 初始化操作
-- (void)setupPromoScrollView
+- (void)setupContent
 {
-    // 添加图片到ScrollView
-    CGFloat scrollW = self.promoScrollView.width;
-    CGFloat scrollH = self.promoScrollView.height;
-    for (int i = 0; i < 3; i++) {
-        UIImageView *imageView = [[UIImageView alloc] init];
-        imageView.width = scrollW;
-        imageView.height = scrollH;
-        imageView.y = 0;
-        imageView.x = scrollW * i;
-        [self.promoScrollView addSubview:imageView];
-        
-        //显示图片
-        NSString *imageName = [NSString stringWithFormat:@"promo%d", i];
-        imageView.image = [UIImage imageNamed:imageName];
-        
-    }
+    // 创建促销
+    BJScrollView *promoScrollview = [BJScrollView scrollView];
+    // promoScrollview.frame = CGRectMake(0, 0, self.view.width, 200);
+    [promoScrollview autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsZero excludingEdge:ALEdgeBottom];
+    [promoScrollview autoSetDimension:ALDimensionHeight toSize:200];
+    // 创建toolBar
+
 }
 
 /**
@@ -95,27 +77,27 @@
     self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithTarget:self action:@selector(categaryClick:) Image:@"Coin.png" highlightImage:@"Coin.png"];
 }
 
-#pragma mark - UITableViewDataSource
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-    return 3;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    return 3;
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    static NSString *ID = @"HomeTableViewCell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
-    if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:ID];
-    }
-    
-    return cell;
-}
+//#pragma mark - UITableViewDataSource
+//- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+//{
+//    return 3;
+//}
+//
+//- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+//{
+//    return 3;
+//}
+//
+//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    static NSString *ID = @"HomeTableViewCell";
+//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+//    if (!cell) {
+//        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:ID];
+//    }
+//    
+//    return cell;
+//}
 
 #pragma mark - UITableViewDelegate
 
