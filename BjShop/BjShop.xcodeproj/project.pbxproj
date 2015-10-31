@@ -19,6 +19,14 @@
 		E87468951BE3525E00B7C6B4 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = E87468941BE3525E00B7C6B4 /* UIView+Extension.m */; };
 		E87468971BE3526700B7C6B4 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = E87468961BE3526700B7C6B4 /* Foundation+Log.m */; };
 		E874689B1BE3528300B7C6B4 /* UIView+AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E874689A1BE3528300B7C6B4 /* UIView+AutoLayout.m */; };
+		E89144011BE46D2E00CEFBD2 /* BJCategaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E89143FF1BE46D2E00CEFBD2 /* BJCategaryViewController.m */; };
+		E89144021BE46D2E00CEFBD2 /* BJCategaryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E89144001BE46D2E00CEFBD2 /* BJCategaryViewController.xib */; };
+		E89144451BE471BF00CEFBD2 /* BJShoppingCartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E89144431BE471BF00CEFBD2 /* BJShoppingCartViewController.m */; };
+		E89144461BE471BF00CEFBD2 /* BJShoppingCartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E89144441BE471BF00CEFBD2 /* BJShoppingCartViewController.xib */; };
+		E891444A1BE4734000CEFBD2 /* BJMybjiaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E89144481BE4734000CEFBD2 /* BJMybjiaViewController.m */; };
+		E891444B1BE4734000CEFBD2 /* BJMybjiaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E89144491BE4734000CEFBD2 /* BJMybjiaViewController.xib */; };
+		E891444F1BE4746D00CEFBD2 /* BJCheapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E891444D1BE4746D00CEFBD2 /* BJCheapViewController.m */; };
+		E89144501BE4746D00CEFBD2 /* BJCheapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E891444E1BE4746D00CEFBD2 /* BJCheapViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +70,18 @@
 		E87468961BE3526700B7C6B4 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
 		E87468991BE3528300B7C6B4 /* UIView+AutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AutoLayout.h"; sourceTree = "<group>"; };
 		E874689A1BE3528300B7C6B4 /* UIView+AutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AutoLayout.m"; sourceTree = "<group>"; };
+		E89143FE1BE46D2E00CEFBD2 /* BJCategaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJCategaryViewController.h; sourceTree = "<group>"; };
+		E89143FF1BE46D2E00CEFBD2 /* BJCategaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BJCategaryViewController.m; sourceTree = "<group>"; };
+		E89144001BE46D2E00CEFBD2 /* BJCategaryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BJCategaryViewController.xib; sourceTree = "<group>"; };
+		E89144421BE471BF00CEFBD2 /* BJShoppingCartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJShoppingCartViewController.h; sourceTree = "<group>"; };
+		E89144431BE471BF00CEFBD2 /* BJShoppingCartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BJShoppingCartViewController.m; sourceTree = "<group>"; };
+		E89144441BE471BF00CEFBD2 /* BJShoppingCartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BJShoppingCartViewController.xib; sourceTree = "<group>"; };
+		E89144471BE4734000CEFBD2 /* BJMybjiaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJMybjiaViewController.h; sourceTree = "<group>"; };
+		E89144481BE4734000CEFBD2 /* BJMybjiaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BJMybjiaViewController.m; sourceTree = "<group>"; };
+		E89144491BE4734000CEFBD2 /* BJMybjiaViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BJMybjiaViewController.xib; sourceTree = "<group>"; };
+		E891444C1BE4746D00CEFBD2 /* BJCheapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJCheapViewController.h; sourceTree = "<group>"; };
+		E891444D1BE4746D00CEFBD2 /* BJCheapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BJCheapViewController.m; sourceTree = "<group>"; };
+		E891444E1BE4746D00CEFBD2 /* BJCheapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BJCheapViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -262,6 +282,9 @@
 		E8481A851BE31146005FB8CE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				E89144471BE4734000CEFBD2 /* BJMybjiaViewController.h */,
+				E89144481BE4734000CEFBD2 /* BJMybjiaViewController.m */,
+				E89144491BE4734000CEFBD2 /* BJMybjiaViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -302,6 +325,9 @@
 		E89143F31BE46C3000CEFBD2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				E89143FE1BE46D2E00CEFBD2 /* BJCategaryViewController.h */,
+				E89143FF1BE46D2E00CEFBD2 /* BJCategaryViewController.m */,
+				E89144001BE46D2E00CEFBD2 /* BJCategaryViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -333,6 +359,9 @@
 		E89143F71BE46C3C00CEFBD2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				E891444C1BE4746D00CEFBD2 /* BJCheapViewController.h */,
+				E891444D1BE4746D00CEFBD2 /* BJCheapViewController.m */,
+				E891444E1BE4746D00CEFBD2 /* BJCheapViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -364,6 +393,9 @@
 		E89143FB1BE46C5000CEFBD2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				E89144421BE471BF00CEFBD2 /* BJShoppingCartViewController.h */,
+				E89144431BE471BF00CEFBD2 /* BJShoppingCartViewController.m */,
+				E89144441BE471BF00CEFBD2 /* BJShoppingCartViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -486,9 +518,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E891444B1BE4734000CEFBD2 /* BJMybjiaViewController.xib in Resources */,
+				E89144501BE4746D00CEFBD2 /* BJCheapViewController.xib in Resources */,
+				E89144021BE46D2E00CEFBD2 /* BJCategaryViewController.xib in Resources */,
 				E8481A921BE31378005FB8CE /* BJHomeViewController.xib in Resources */,
 				E8481A4B1BE30545005FB8CE /* LaunchScreen.storyboard in Resources */,
 				E8481A481BE30545005FB8CE /* Assets.xcassets in Resources */,
+				E89144461BE471BF00CEFBD2 /* BJShoppingCartViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,11 +549,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E891444A1BE4734000CEFBD2 /* BJMybjiaViewController.m in Sources */,
+				E891444F1BE4746D00CEFBD2 /* BJCheapViewController.m in Sources */,
+				E89144011BE46D2E00CEFBD2 /* BJCategaryViewController.m in Sources */,
 				E8481A8D1BE31146005FB8CE /* main.m in Sources */,
 				E8481A911BE31378005FB8CE /* BJHomeViewController.m in Sources */,
 				E874689B1BE3528300B7C6B4 /* UIView+AutoLayout.m in Sources */,
 				E87468971BE3526700B7C6B4 /* Foundation+Log.m in Sources */,
 				E8481A8C1BE31146005FB8CE /* AppDelegate.m in Sources */,
+				E89144451BE471BF00CEFBD2 /* BJShoppingCartViewController.m in Sources */,
 				E87468951BE3525E00B7C6B4 /* UIView+Extension.m in Sources */,
 				E8481A951BE3144C005FB8CE /* BJNavigationController.m in Sources */,
 			);

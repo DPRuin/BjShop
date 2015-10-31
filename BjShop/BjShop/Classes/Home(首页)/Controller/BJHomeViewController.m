@@ -7,6 +7,11 @@
 //
 
 #import "BJHomeViewController.h"
+#import "BJNavigationController.h"
+#import "BJCategaryViewController.h"
+#import "BJShoppingCartViewController.h"
+#import "BJMybjiaViewController.h"
+#import "BJCheapViewController.h"
 
 @interface BJHomeViewController ()
 /** 促销 */
@@ -40,20 +45,37 @@
  *  购物车点击
  */
 - (IBAction)shoppingCartClick:(UIButton *)sender {
+    // modal购物车控制器
+    BJNavigationController *shoppingCartNav = [[BJNavigationController alloc] initWithRootViewController:[[BJShoppingCartViewController alloc] init]];
+    shoppingCartNav.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+    [self presentViewController:shoppingCartNav animated:YES completion:nil];
+    
 }
 /**
  *  我的彼佳点击
  */
 - (IBAction)myBjiaClick:(UIButton *)sender {
+    // modal我的彼佳控制器
+    BJNavigationController *myBjiaNav = [[BJNavigationController alloc] initWithRootViewController:[[BJMybjiaViewController alloc] init]];
+    myBjiaNav.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+    [self presentViewController:myBjiaNav animated:YES completion:nil];
 }
 /**
  *  特实惠点击
  */
 - (IBAction)cheapClick:(UIButton *)sender {
+    // modal特实惠控制器
+    BJNavigationController *cheapNav = [[BJNavigationController alloc] initWithRootViewController:[[BJCheapViewController alloc] init]];
+    cheapNav.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+    [self presentViewController:cheapNav animated:YES completion:nil];
 }
 /**
  *  分类点击
  */
 - (IBAction)categaryClick:(UIButton *)sender {
+    // modal分类控制器
+    BJNavigationController *categaryNav = [[BJNavigationController alloc] initWithRootViewController:[[BJCategaryViewController alloc] init]];
+    categaryNav.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+    [self presentViewController:categaryNav animated:YES completion:nil];
 }
 @end
