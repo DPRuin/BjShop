@@ -19,6 +19,8 @@
 		E87468951BE3525E00B7C6B4 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = E87468941BE3525E00B7C6B4 /* UIView+Extension.m */; };
 		E87468971BE3526700B7C6B4 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = E87468961BE3526700B7C6B4 /* Foundation+Log.m */; };
 		E874689B1BE3528300B7C6B4 /* UIView+AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E874689A1BE3528300B7C6B4 /* UIView+AutoLayout.m */; };
+		E88F03881BE4870D008407BA /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = E88F03871BE4870D008407BA /* UIBarButtonItem+Extension.m */; };
+		E88F038B1BE48EAD008407BA /* BJConst.m in Sources */ = {isa = PBXBuildFile; fileRef = E88F038A1BE48EAD008407BA /* BJConst.m */; };
 		E89144011BE46D2E00CEFBD2 /* BJCategaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E89143FF1BE46D2E00CEFBD2 /* BJCategaryViewController.m */; };
 		E89144021BE46D2E00CEFBD2 /* BJCategaryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E89144001BE46D2E00CEFBD2 /* BJCategaryViewController.xib */; };
 		E89144451BE471BF00CEFBD2 /* BJShoppingCartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E89144431BE471BF00CEFBD2 /* BJShoppingCartViewController.m */; };
@@ -70,6 +72,11 @@
 		E87468961BE3526700B7C6B4 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
 		E87468991BE3528300B7C6B4 /* UIView+AutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AutoLayout.h"; sourceTree = "<group>"; };
 		E874689A1BE3528300B7C6B4 /* UIView+AutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AutoLayout.m"; sourceTree = "<group>"; };
+		E88F03861BE4870D008407BA /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
+		E88F03871BE4870D008407BA /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
+		E88F03891BE48EAD008407BA /* BJConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJConst.h; sourceTree = "<group>"; };
+		E88F038A1BE48EAD008407BA /* BJConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BJConst.m; sourceTree = "<group>"; };
+		E88F038C1BE48EEA008407BA /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		E89143FE1BE46D2E00CEFBD2 /* BJCategaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJCategaryViewController.h; sourceTree = "<group>"; };
 		E89143FF1BE46D2E00CEFBD2 /* BJCategaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BJCategaryViewController.m; sourceTree = "<group>"; };
 		E89144001BE46D2E00CEFBD2 /* BJCategaryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BJCategaryViewController.xib; sourceTree = "<group>"; };
@@ -228,6 +235,8 @@
 		E8481A7C1BE31146005FB8CE /* Categary */ = {
 			isa = PBXGroup;
 			children = (
+				E88F03861BE4870D008407BA /* UIBarButtonItem+Extension.h */,
+				E88F03871BE4870D008407BA /* UIBarButtonItem+Extension.m */,
 				E87468961BE3526700B7C6B4 /* Foundation+Log.m */,
 				E87468931BE3525E00B7C6B4 /* UIView+Extension.h */,
 				E87468941BE3525E00B7C6B4 /* UIView+Extension.m */,
@@ -257,6 +266,9 @@
 			children = (
 				E8481A801BE31146005FB8CE /* AppDelegate.h */,
 				E8481A811BE31146005FB8CE /* AppDelegate.m */,
+				E88F03891BE48EAD008407BA /* BJConst.h */,
+				E88F038A1BE48EAD008407BA /* BJConst.m */,
+				E88F038C1BE48EEA008407BA /* PrefixHeader.pch */,
 				E8481A821BE31146005FB8CE /* main.m */,
 			);
 			path = Other;
@@ -549,9 +561,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E88F03881BE4870D008407BA /* UIBarButtonItem+Extension.m in Sources */,
 				E891444A1BE4734000CEFBD2 /* BJMybjiaViewController.m in Sources */,
 				E891444F1BE4746D00CEFBD2 /* BJCheapViewController.m in Sources */,
 				E89144011BE46D2E00CEFBD2 /* BJCategaryViewController.m in Sources */,
+				E88F038B1BE48EAD008407BA /* BJConst.m in Sources */,
 				E8481A8D1BE31146005FB8CE /* main.m in Sources */,
 				E8481A911BE31378005FB8CE /* BJHomeViewController.m in Sources */,
 				E874689B1BE3528300B7C6B4 /* UIView+AutoLayout.m in Sources */,
@@ -632,6 +646,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = BjShop/Classes/Main/Other/PrefixHeader.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -674,6 +689,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = BjShop/Classes/Main/Other/PrefixHeader.pch;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;

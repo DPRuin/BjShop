@@ -23,6 +23,9 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="200" id="st5-A8-0ZR"/>
                     </constraints>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="Rfr-GK-GIa"/>
+                    </connections>
                 </scrollView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T6p-Ne-7OZ" userLabel="toolbar">
                     <rect key="frame" x="0.0" y="200" width="600" height="100"/>
@@ -86,6 +89,10 @@
                     <rect key="frame" x="0.0" y="300" width="600" height="300"/>
                     <animations/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="gHO-1K-BLb"/>
+                        <outlet property="delegate" destination="-1" id="3mL-WD-jh8"/>
+                    </connections>
                 </tableView>
             </subviews>
             <animations/>
@@ -102,7 +109,7 @@
                 <constraint firstAttribute="trailing" secondItem="KPC-SC-MeX" secondAttribute="trailing" id="rq2-RX-TTA"/>
                 <constraint firstItem="T6p-Ne-7OZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="zTr-a2-bvI"/>
             </constraints>
-            <point key="canvasLocation" x="330" y="246"/>
+            <point key="canvasLocation" x="265" y="186"/>
         </view>
     </objects>
 </document>
