@@ -149,76 +149,14 @@
 		E8481A6E1BE31146005FB8CE /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				E8481A6F1BE31146005FB8CE /* Chat(聊天) */,
-				E8481A731BE31146005FB8CE /* Circle(圈子) */,
-				E8481A771BE31146005FB8CE /* Home(首页) */,
+				E89143FA1BE46C5000CEFBD2 /* ShoppingCart(购物车） */,
+				E89143F61BE46C3C00CEFBD2 /* Cheap（特实惠） */,
+				E89143F21BE46C3000CEFBD2 /* Categary(分类) */,
 				E8481A7B1BE31146005FB8CE /* Main */,
+				E8481A771BE31146005FB8CE /* Home(首页) */,
 				E8481A841BE31146005FB8CE /* Mybjia(我的彼佳) */,
-				E8481A881BE31146005FB8CE /* Shop(我的购物车） */,
 			);
 			path = Classes;
-			sourceTree = "<group>";
-		};
-		E8481A6F1BE31146005FB8CE /* Chat(聊天) */ = {
-			isa = PBXGroup;
-			children = (
-				E8481A701BE31146005FB8CE /* Controller */,
-				E8481A711BE31146005FB8CE /* Model */,
-				E8481A721BE31146005FB8CE /* View */,
-			);
-			path = "Chat(聊天)";
-			sourceTree = "<group>";
-		};
-		E8481A701BE31146005FB8CE /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		E8481A711BE31146005FB8CE /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		E8481A721BE31146005FB8CE /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		E8481A731BE31146005FB8CE /* Circle(圈子) */ = {
-			isa = PBXGroup;
-			children = (
-				E8481A741BE31146005FB8CE /* Controller */,
-				E8481A751BE31146005FB8CE /* Model */,
-				E8481A761BE31146005FB8CE /* View */,
-			);
-			path = "Circle(圈子)";
-			sourceTree = "<group>";
-		};
-		E8481A741BE31146005FB8CE /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		E8481A751BE31146005FB8CE /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		E8481A761BE31146005FB8CE /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		E8481A771BE31146005FB8CE /* Home(首页) */ = {
@@ -342,37 +280,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		E8481A881BE31146005FB8CE /* Shop(我的购物车） */ = {
-			isa = PBXGroup;
-			children = (
-				E8481A891BE31146005FB8CE /* Controller */,
-				E8481A8A1BE31146005FB8CE /* Model */,
-				E8481A8B1BE31146005FB8CE /* View */,
-			);
-			path = "Shop(我的购物车）";
-			sourceTree = "<group>";
-		};
-		E8481A891BE31146005FB8CE /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		E8481A8A1BE31146005FB8CE /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		E8481A8B1BE31146005FB8CE /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		E87468981BE3528300B7C6B4 /* UIView-AutoLayout */ = {
 			isa = PBXGroup;
 			children = (
@@ -380,6 +287,99 @@
 				E874689A1BE3528300B7C6B4 /* UIView+AutoLayout.m */,
 			);
 			path = "UIView-AutoLayout";
+			sourceTree = "<group>";
+		};
+		E89143F21BE46C3000CEFBD2 /* Categary(分类) */ = {
+			isa = PBXGroup;
+			children = (
+				E89143F31BE46C3000CEFBD2 /* Controller */,
+				E89143F41BE46C3000CEFBD2 /* Model */,
+				E89143F51BE46C3000CEFBD2 /* View */,
+			);
+			path = "Categary(分类)";
+			sourceTree = "<group>";
+		};
+		E89143F31BE46C3000CEFBD2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E89143F41BE46C3000CEFBD2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E89143F51BE46C3000CEFBD2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E89143F61BE46C3C00CEFBD2 /* Cheap（特实惠） */ = {
+			isa = PBXGroup;
+			children = (
+				E89143F71BE46C3C00CEFBD2 /* Controller */,
+				E89143F81BE46C3C00CEFBD2 /* Model */,
+				E89143F91BE46C3C00CEFBD2 /* View */,
+			);
+			path = "Cheap（特实惠）";
+			sourceTree = "<group>";
+		};
+		E89143F71BE46C3C00CEFBD2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E89143F81BE46C3C00CEFBD2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E89143F91BE46C3C00CEFBD2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E89143FA1BE46C5000CEFBD2 /* ShoppingCart(购物车） */ = {
+			isa = PBXGroup;
+			children = (
+				E89143FB1BE46C5000CEFBD2 /* Controller */,
+				E89143FC1BE46C5000CEFBD2 /* Model */,
+				E89143FD1BE46C5000CEFBD2 /* View */,
+			);
+			path = "ShoppingCart(购物车）";
+			sourceTree = "<group>";
+		};
+		E89143FB1BE46C5000CEFBD2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E89143FC1BE46C5000CEFBD2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E89143FD1BE46C5000CEFBD2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

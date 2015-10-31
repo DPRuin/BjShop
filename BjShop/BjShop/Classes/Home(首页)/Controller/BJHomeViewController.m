@@ -9,6 +9,19 @@
 #import "BJHomeViewController.h"
 
 @interface BJHomeViewController ()
+/** 促销 */
+@property (weak, nonatomic) IBOutlet UIScrollView *promoScrollView;
+/** 商品 */
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+
+/** 购物车按钮点击 */
+- (IBAction)shoppingCartClick:(UIButton *)sender;
+/** 我的彼佳按钮点击 */
+- (IBAction)myBjiaClick:(UIButton *)sender;
+/** 特实惠按钮点击 */
+- (IBAction)cheapClick:(UIButton *)sender;
+/** 分类按钮点击 */
+- (IBAction)categaryClick:(UIButton *)sender;
 
 @end
 
@@ -16,25 +29,31 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     self.title = @"bijia";
     
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(menuButtonClick)];
-    
-    // 拖拽手势
-    UIPanGestureRecognizer *recognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(dragging:)];
-    [self.view addGestureRecognizer:recognizer];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(categaryClick:)];
 
 }
 
-- (void)dragging:(UIPanGestureRecognizer *)recognizer
-{
-    
+#pragma mark - toolBar按钮点击
+/**
+ *  购物车点击
+ */
+- (IBAction)shoppingCartClick:(UIButton *)sender {
 }
-
-
-- (void)menuButtonClick
-{
-
+/**
+ *  我的彼佳点击
+ */
+- (IBAction)myBjiaClick:(UIButton *)sender {
+}
+/**
+ *  特实惠点击
+ */
+- (IBAction)cheapClick:(UIButton *)sender {
+}
+/**
+ *  分类点击
+ */
+- (IBAction)categaryClick:(UIButton *)sender {
 }
 @end

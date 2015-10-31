@@ -7,6 +7,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BJHomeViewController">
             <connections>
+                <outlet property="promoScrollView" destination="F71-ta-XmU" id="Zg9-Dz-Jh3"/>
+                <outlet property="tableView" destination="KPC-SC-MeX" id="XUc-yU-RWW"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -14,8 +16,93 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F71-ta-XmU" userLabel="促销">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="st5-A8-0ZR"/>
+                    </constraints>
+                </scrollView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T6p-Ne-7OZ" userLabel="toolbar">
+                    <rect key="frame" x="0.0" y="200" width="600" height="100"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y7J-xB-toB">
+                            <rect key="frame" x="154" y="0.0" width="146" height="100"/>
+                            <animations/>
+                            <state key="normal" title="购物车"/>
+                            <connections>
+                                <action selector="shoppingCartClick:" destination="-1" eventType="touchUpInside" id="Xcz-ai-gA3"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aYG-vg-Ah5">
+                            <rect key="frame" x="300" y="0.0" width="146" height="100"/>
+                            <animations/>
+                            <state key="normal" title="我的"/>
+                            <connections>
+                                <action selector="myBjiaClick:" destination="-1" eventType="touchUpInside" id="Ias-d7-8oR"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b3g-5v-S0V">
+                            <rect key="frame" x="446" y="0.0" width="146" height="100"/>
+                            <animations/>
+                            <state key="normal" title="特实惠"/>
+                            <connections>
+                                <action selector="cheapClick:" destination="-1" eventType="touchUpInside" id="NNc-yB-url"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="570-zF-zOi">
+                            <rect key="frame" x="8" y="0.0" width="146" height="100"/>
+                            <animations/>
+                            <state key="normal" title="分类"/>
+                            <connections>
+                                <action selector="categaryClick:" destination="-1" eventType="touchUpInside" id="Rlu-Tb-nNI"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="b3g-5v-S0V" firstAttribute="top" secondItem="T6p-Ne-7OZ" secondAttribute="top" id="2PW-Jw-fB3"/>
+                        <constraint firstItem="Y7J-xB-toB" firstAttribute="top" secondItem="T6p-Ne-7OZ" secondAttribute="top" id="4Cx-bR-10l"/>
+                        <constraint firstAttribute="bottom" secondItem="aYG-vg-Ah5" secondAttribute="bottom" id="5pD-rW-x14"/>
+                        <constraint firstItem="570-zF-zOi" firstAttribute="top" secondItem="T6p-Ne-7OZ" secondAttribute="top" id="Beq-h1-ev9"/>
+                        <constraint firstItem="aYG-vg-Ah5" firstAttribute="leading" secondItem="Y7J-xB-toB" secondAttribute="trailing" id="Hun-SY-Fea"/>
+                        <constraint firstItem="b3g-5v-S0V" firstAttribute="leading" secondItem="aYG-vg-Ah5" secondAttribute="trailing" id="Kfu-7e-mzK"/>
+                        <constraint firstItem="aYG-vg-Ah5" firstAttribute="top" secondItem="T6p-Ne-7OZ" secondAttribute="top" id="NX1-Xi-GCh"/>
+                        <constraint firstItem="b3g-5v-S0V" firstAttribute="width" secondItem="570-zF-zOi" secondAttribute="width" id="PFE-mN-vP8"/>
+                        <constraint firstItem="Y7J-xB-toB" firstAttribute="width" secondItem="570-zF-zOi" secondAttribute="width" id="Tkz-Ay-WyH"/>
+                        <constraint firstAttribute="trailing" secondItem="b3g-5v-S0V" secondAttribute="trailing" constant="8" id="WDK-B2-pJG"/>
+                        <constraint firstItem="Y7J-xB-toB" firstAttribute="leading" secondItem="570-zF-zOi" secondAttribute="trailing" id="Yed-Qf-hyV"/>
+                        <constraint firstAttribute="bottom" secondItem="570-zF-zOi" secondAttribute="bottom" id="a8T-BB-lso"/>
+                        <constraint firstAttribute="height" constant="100" id="ddP-lp-Bvn"/>
+                        <constraint firstAttribute="bottom" secondItem="b3g-5v-S0V" secondAttribute="bottom" id="e6v-3x-EoV"/>
+                        <constraint firstItem="570-zF-zOi" firstAttribute="leading" secondItem="T6p-Ne-7OZ" secondAttribute="leading" constant="8" id="fxA-qG-558"/>
+                        <constraint firstAttribute="bottom" secondItem="Y7J-xB-toB" secondAttribute="bottom" id="sLz-T0-Ve1"/>
+                        <constraint firstItem="aYG-vg-Ah5" firstAttribute="width" secondItem="570-zF-zOi" secondAttribute="width" id="u6j-wu-ETB"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KPC-SC-MeX">
+                    <rect key="frame" x="0.0" y="300" width="600" height="300"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
             <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="KPC-SC-MeX" firstAttribute="top" secondItem="T6p-Ne-7OZ" secondAttribute="bottom" id="DaR-wH-Eb9"/>
+                <constraint firstItem="F71-ta-XmU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Fol-0W-Muo"/>
+                <constraint firstItem="F71-ta-XmU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="I5e-Hv-QAV"/>
+                <constraint firstAttribute="bottom" secondItem="KPC-SC-MeX" secondAttribute="bottom" id="US2-gR-GzL"/>
+                <constraint firstAttribute="trailing" secondItem="F71-ta-XmU" secondAttribute="trailing" id="b66-fT-hPS"/>
+                <constraint firstItem="T6p-Ne-7OZ" firstAttribute="top" secondItem="F71-ta-XmU" secondAttribute="bottom" id="bE5-LW-Nxj"/>
+                <constraint firstItem="KPC-SC-MeX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="inw-7C-TTJ"/>
+                <constraint firstAttribute="trailing" secondItem="T6p-Ne-7OZ" secondAttribute="trailing" id="nOe-3b-W7q"/>
+                <constraint firstAttribute="trailing" secondItem="KPC-SC-MeX" secondAttribute="trailing" id="rq2-RX-TTA"/>
+                <constraint firstItem="T6p-Ne-7OZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="zTr-a2-bvI"/>
+            </constraints>
+            <point key="canvasLocation" x="330" y="246"/>
         </view>
     </objects>
 </document>
