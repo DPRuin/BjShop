@@ -2,12 +2,12 @@
 //  BJHomeViewController.h
 //  BjShop
 //
-//  Created by BaiFaHui on 15/10/30.
+//  Created by BaiFaHui on 15/11/2.
 //  Copyright © 2015年 BaiFaHui. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface BJHomeViewController : UIViewController
+@interface BJHomeViewController : UICollectionViewController
 
 @end

@@ -2,178 +2,97 @@
 //  BJHomeViewController.m
 //  BjShop
 //
-//  Created by BaiFaHui on 15/10/30.
+//  Created by BaiFaHui on 15/11/2.
 //  Copyright © 2015年 BaiFaHui. All rights reserved.
 //
 
 #import "BJHomeViewController.h"
-#import "BJNavigationController.h"
-#import "BJCategaryViewController.h"
-#import "BJShoppingCartViewController.h"
-#import "BJMybjiaViewController.h"
-#import "BJCheapViewController.h"
-#import "UIBarButtonItem+Extension.h"
-#import "UIView+AutoLayout.h"
-#import "UIView+Extension.h"
-#import "BJScrollView.h"
 
-@interface BJHomeViewController () <UISearchBarDelegate>
-@property (weak, nonatomic) IBOutlet UIScrollView *backgroundScrollView;
-/** 促销 */
-@property (nonatomic, weak) UIScrollView *promoScrollView;
-/** 商品 */
-
+@interface BJHomeViewController ()
 
 @end
 
 @implementation BJHomeViewController
 
+static NSString * const reuseIdentifier = @"Cell";
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // 初始化导航栏
-    [self setupNavItem];
     
-    // 初始化首页内容
-    [self setupContent];
-}
-
-#pragma mark - 初始化操作
-- (void)setupContent
-{
-    // 创建促销
-    BJScrollView *promoScrollview = [BJScrollView scrollView];
-    // promoScrollview.frame = CGRectMake(0, 0, self.view.width, 200);
-    [promoScrollview autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsZero excludingEdge:ALEdgeBottom];
-    [promoScrollview autoSetDimension:ALDimensionHeight toSize:200];
-    // 创建toolBar
-
-}
-
-/**
- *  初始化导航栏
- */
-- (void)setupNavItem
-{
-    // logo
-    UIBarButtonItem *logoItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"index_03"] style:UIBarButtonItemStyleDone target:nil action:nil];
-    logoItem.enabled = NO;
-    self.navigationItem.leftBarButtonItem = logoItem;
+    // Uncomment the following line to preserve selection between presentations
+    // self.clearsSelectionOnViewWillAppear = NO;
     
-    // 搜索框
-    UISearchBar *searchBar = [[UISearchBar alloc] init];
-    searchBar.placeholder = @"请输入关键词";
-    searchBar.delegate = self;
-    searchBar.backgroundImage = [UIImage imageNamed:@"bg_login_textfield"];
-    searchBar.tintColor = BJGreenColor;
-    UIView *titleView = [[UIView alloc] init];
-    titleView.width = 200;
-    titleView.height = 30;
-    [titleView addSubview:searchBar];
+    // Register cell classes
+    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
     
-    self.navigationItem.titleView = titleView;
-    [searchBar autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsZero];
+    // Do any additional setup after loading the view.
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
+
+#pragma mark <UICollectionViewDataSource>
+
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
+#warning Incomplete implementation, return the number of sections
+    return 0;
+}
+
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+#warning Incomplete implementation, return the number of items
+    return 0;
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     
-    // 分类按钮
-    self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithTarget:self action:@selector(categaryClick:) Image:@"Coin.png" highlightImage:@"Coin.png"];
-}
-
-//#pragma mark - UITableViewDataSource
-//- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-//{
-//    return 3;
-//}
-//
-//- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-//{
-//    return 3;
-//}
-//
-//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    static NSString *ID = @"HomeTableViewCell";
-//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
-//    if (!cell) {
-//        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:ID];
-//    }
-//    
-//    return cell;
-//}
-
-#pragma mark - UITableViewDelegate
-
-#pragma mark - UIScrollViewDelegate
-
-
-#pragma mark - UISearchBarDelegate
-/**
- *  键盘弹出：搜索框文字开始编辑
- */
-- (void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar
-{
-    // 搜索框背景图片
-    searchBar.backgroundImage = [UIImage imageNamed:@"bg_login_textfield_hl"];
-    // 显示搜索框取消按钮
-    [searchBar setShowsCancelButton:YES animated:YES];
-}
-
-/**
- *  键盘退下：搜索框文字结束编辑
- */
-- (void)searchBarTextDidEndEditing:(UISearchBar *)searchBar
-{
-    // 搜索框背景图片
-    searchBar.backgroundImage = [UIImage imageNamed:@"bg_login_textfield"];
+    // Configure the cell
     
-    // 隐藏搜索框取消按钮
-    [searchBar setShowsCancelButton:NO animated:YES];
+    return cell;
 }
 
-- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
-{
-//    self.keyWord = searchBar.text;
-//    // 进入下拉刷新状态 发送请求给服务器
-//    [self.collectionView headerBeginRefreshing];
-    
-    // 退出键盘
-    [searchBar resignFirstResponder];
+#pragma mark <UICollectionViewDelegate>
+
+/*
+// Uncomment this method to specify if the specified item should be highlighted during tracking
+- (BOOL)collectionView:(UICollectionView *)collectionView shouldHighlightItemAtIndexPath:(NSIndexPath *)indexPath {
+	return YES;
+}
+*/
+
+/*
+// Uncomment this method to specify if the specified item should be selected
+- (BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    return YES;
+}
+*/
+
+/*
+// Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
+- (BOOL)collectionView:(UICollectionView *)collectionView shouldShowMenuForItemAtIndexPath:(NSIndexPath *)indexPath {
+	return NO;
 }
 
-#pragma mark - toolBar按钮点击
-/**
- *  购物车点击
- */
-- (IBAction)shoppingCartClick:(UIButton *)sender {
-    // modal购物车控制器
-    BJNavigationController *shoppingCartNav = [[BJNavigationController alloc] initWithRootViewController:[[BJShoppingCartViewController alloc] init]];
-    shoppingCartNav.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
-    [self presentViewController:shoppingCartNav animated:YES completion:nil];
-    
+- (BOOL)collectionView:(UICollectionView *)collectionView canPerformAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
+	return NO;
 }
-/**
- *  我的彼佳点击
- */
-- (IBAction)myBjiaClick:(UIButton *)sender {
-    // modal我的彼佳控制器
-    BJNavigationController *myBjiaNav = [[BJNavigationController alloc] initWithRootViewController:[[BJMybjiaViewController alloc] init]];
-    myBjiaNav.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
-    [self presentViewController:myBjiaNav animated:YES completion:nil];
+
+- (void)collectionView:(UICollectionView *)collectionView performAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
+	
 }
-/**
- *  特实惠点击
- */
-- (IBAction)cheapClick:(UIButton *)sender {
-    // modal特实惠控制器
-    BJNavigationController *cheapNav = [[BJNavigationController alloc] initWithRootViewController:[[BJCheapViewController alloc] init]];
-    cheapNav.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
-    [self presentViewController:cheapNav animated:YES completion:nil];
-}
-/**
- *  分类点击
- */
-- (IBAction)categaryClick:(UIButton *)sender {
-    // modal分类控制器
-    BJNavigationController *categaryNav = [[BJNavigationController alloc] initWithRootViewController:[[BJCategaryViewController alloc] init]];
-    categaryNav.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
-    [self presentViewController:categaryNav animated:YES completion:nil];
-}
+*/
+
 @end
