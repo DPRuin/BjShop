@@ -1,5 +1,5 @@
 //
-//  BJHomeViewController.h
+//  BJHomeGoodsCell.h
 //  BjShop
 //
 //  Created by BaiFaHui on 15/11/2.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BJHomeViewController : UITableViewController
+@interface BJHomeGoodsCell : UITableViewCell
 
 @end

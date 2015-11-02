@@ -11,3 +11,9 @@
 #define BJGlobalBg BJColor(230, 230, 230)
 
 #define BJGreenColor BJColor(32, 191, 179)
+
+// 屏幕大小尺寸
+#define screen_width [UIScreen mainScreen].bounds.size.width
+#define screen_height [UIScreen mainScreen].bounds.size.height
+// 系统版本
+#define IOS_VERSION [[[UIDevice currentDevice] systemVersion] floatValue]

@@ -27,7 +27,13 @@
 		E891444B1BE4734000CEFBD2 /* BJMybjiaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E89144491BE4734000CEFBD2 /* BJMybjiaViewController.xib */; };
 		E891444F1BE4746D00CEFBD2 /* BJCheapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E891444D1BE4746D00CEFBD2 /* BJCheapViewController.m */; };
 		E89144501BE4746D00CEFBD2 /* BJCheapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E891444E1BE4746D00CEFBD2 /* BJCheapViewController.xib */; };
-		E8E0C7911BE6ED7C00397AC3 /* BJHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E0C7901BE6ED7C00397AC3 /* BJHomeViewController.m */; };
+		E8E0C7B01BE6F77F00397AC3 /* BJHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E0C7AF1BE6F77F00397AC3 /* BJHomeViewController.m */; };
+		E8E0C7B41BE6F7AD00397AC3 /* BJHomePromoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E0C7B21BE6F7AD00397AC3 /* BJHomePromoCell.m */; };
+		E8E0C7B51BE6F7AD00397AC3 /* BJHomePromoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8E0C7B31BE6F7AD00397AC3 /* BJHomePromoCell.xib */; };
+		E8E0C7B91BE6F7D600397AC3 /* BJHomeToolbarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E0C7B71BE6F7D600397AC3 /* BJHomeToolbarCell.m */; };
+		E8E0C7BA1BE6F7D600397AC3 /* BJHomeToolbarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8E0C7B81BE6F7D600397AC3 /* BJHomeToolbarCell.xib */; };
+		E8E0C7C31BE6FBF800397AC3 /* BJHomeGoodsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E0C7C11BE6FBF800397AC3 /* BJHomeGoodsCell.m */; };
+		E8E0C7C41BE6FBF800397AC3 /* BJHomeGoodsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8E0C7C21BE6FBF800397AC3 /* BJHomeGoodsCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,8 +91,17 @@
 		E891444C1BE4746D00CEFBD2 /* BJCheapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJCheapViewController.h; sourceTree = "<group>"; };
 		E891444D1BE4746D00CEFBD2 /* BJCheapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BJCheapViewController.m; sourceTree = "<group>"; };
 		E891444E1BE4746D00CEFBD2 /* BJCheapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BJCheapViewController.xib; sourceTree = "<group>"; };
-		E8E0C78F1BE6ED7C00397AC3 /* BJHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJHomeViewController.h; sourceTree = "<group>"; };
-		E8E0C7901BE6ED7C00397AC3 /* BJHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BJHomeViewController.m; sourceTree = "<group>"; };
+		E8E0C7AE1BE6F77F00397AC3 /* BJHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJHomeViewController.h; sourceTree = "<group>"; };
+		E8E0C7AF1BE6F77F00397AC3 /* BJHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BJHomeViewController.m; sourceTree = "<group>"; };
+		E8E0C7B11BE6F7AD00397AC3 /* BJHomePromoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJHomePromoCell.h; sourceTree = "<group>"; };
+		E8E0C7B21BE6F7AD00397AC3 /* BJHomePromoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BJHomePromoCell.m; sourceTree = "<group>"; };
+		E8E0C7B31BE6F7AD00397AC3 /* BJHomePromoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BJHomePromoCell.xib; sourceTree = "<group>"; };
+		E8E0C7B61BE6F7D600397AC3 /* BJHomeToolbarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJHomeToolbarCell.h; sourceTree = "<group>"; };
+		E8E0C7B71BE6F7D600397AC3 /* BJHomeToolbarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BJHomeToolbarCell.m; sourceTree = "<group>"; };
+		E8E0C7B81BE6F7D600397AC3 /* BJHomeToolbarCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BJHomeToolbarCell.xib; sourceTree = "<group>"; };
+		E8E0C7C01BE6FBF800397AC3 /* BJHomeGoodsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJHomeGoodsCell.h; sourceTree = "<group>"; };
+		E8E0C7C11BE6FBF800397AC3 /* BJHomeGoodsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BJHomeGoodsCell.m; sourceTree = "<group>"; };
+		E8E0C7C21BE6FBF800397AC3 /* BJHomeGoodsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BJHomeGoodsCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,8 +213,8 @@
 		E8481A781BE31146005FB8CE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				E8E0C78F1BE6ED7C00397AC3 /* BJHomeViewController.h */,
-				E8E0C7901BE6ED7C00397AC3 /* BJHomeViewController.m */,
+				E8E0C7AE1BE6F77F00397AC3 /* BJHomeViewController.h */,
+				E8E0C7AF1BE6F77F00397AC3 /* BJHomeViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -214,6 +229,15 @@
 		E8481A7A1BE31146005FB8CE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E8E0C7B11BE6F7AD00397AC3 /* BJHomePromoCell.h */,
+				E8E0C7B21BE6F7AD00397AC3 /* BJHomePromoCell.m */,
+				E8E0C7B31BE6F7AD00397AC3 /* BJHomePromoCell.xib */,
+				E8E0C7B61BE6F7D600397AC3 /* BJHomeToolbarCell.h */,
+				E8E0C7B71BE6F7D600397AC3 /* BJHomeToolbarCell.m */,
+				E8E0C7B81BE6F7D600397AC3 /* BJHomeToolbarCell.xib */,
+				E8E0C7C01BE6FBF800397AC3 /* BJHomeGoodsCell.h */,
+				E8E0C7C11BE6FBF800397AC3 /* BJHomeGoodsCell.m */,
+				E8E0C7C21BE6FBF800397AC3 /* BJHomeGoodsCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -541,6 +565,9 @@
 				E8481A4B1BE30545005FB8CE /* LaunchScreen.storyboard in Resources */,
 				E8481A481BE30545005FB8CE /* Assets.xcassets in Resources */,
 				E89144461BE471BF00CEFBD2 /* BJShoppingCartViewController.xib in Resources */,
+				E8E0C7BA1BE6F7D600397AC3 /* BJHomeToolbarCell.xib in Resources */,
+				E8E0C7B51BE6F7AD00397AC3 /* BJHomePromoCell.xib in Resources */,
+				E8E0C7C41BE6FBF800397AC3 /* BJHomeGoodsCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -566,9 +593,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E88F03881BE4870D008407BA /* UIBarButtonItem+Extension.m in Sources */,
+				E8E0C7B91BE6F7D600397AC3 /* BJHomeToolbarCell.m in Sources */,
 				E891444A1BE4734000CEFBD2 /* BJMybjiaViewController.m in Sources */,
-				E8E0C7911BE6ED7C00397AC3 /* BJHomeViewController.m in Sources */,
+				E8E0C7B01BE6F77F00397AC3 /* BJHomeViewController.m in Sources */,
 				E891444F1BE4746D00CEFBD2 /* BJCheapViewController.m in Sources */,
+				E8E0C7B41BE6F7AD00397AC3 /* BJHomePromoCell.m in Sources */,
 				E89144011BE46D2E00CEFBD2 /* BJCategaryViewController.m in Sources */,
 				E88F038B1BE48EAD008407BA /* BJConst.m in Sources */,
 				E8481A8D1BE31146005FB8CE /* main.m in Sources */,
@@ -576,6 +605,7 @@
 				E87468971BE3526700B7C6B4 /* Foundation+Log.m in Sources */,
 				E8481A8C1BE31146005FB8CE /* AppDelegate.m in Sources */,
 				E89144451BE471BF00CEFBD2 /* BJShoppingCartViewController.m in Sources */,
+				E8E0C7C31BE6FBF800397AC3 /* BJHomeGoodsCell.m in Sources */,
 				E87468951BE3525E00B7C6B4 /* UIView+Extension.m in Sources */,
 				E8481A951BE3144C005FB8CE /* BJNavigationController.m in Sources */,
 			);

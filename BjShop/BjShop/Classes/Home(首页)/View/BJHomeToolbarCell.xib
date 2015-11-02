@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell2" id="KGk-i7-Jjw" customClass="BJHomeToolbarCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DP8-C5-zlF" userLabel="分类">
+                        <rect key="frame" x="8" y="8" width="76" height="33"/>
+                        <animations/>
+                        <state key="normal" image="icon_tabbar_homepage_selected"/>
+                        <connections>
+                            <action selector="categaryClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="20N-jH-RJD"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i7M-q5-iaj" userLabel="购物车">
+                        <rect key="frame" x="84" y="8" width="76" height="33"/>
+                        <animations/>
+                        <state key="normal" title="购物车"/>
+                        <connections>
+                            <action selector="shoppingCartClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Hdp-qM-Crf"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lMS-rk-ZD7" userLabel="我的">
+                        <rect key="frame" x="160" y="8" width="76" height="33"/>
+                        <animations/>
+                        <state key="normal" title="我的"/>
+                        <connections>
+                            <action selector="mybjiaClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="GcS-aX-MNx"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nAC-f4-dBk" userLabel="特实惠">
+                        <rect key="frame" x="236" y="8" width="76" height="33"/>
+                        <animations/>
+                        <state key="normal" title="特实惠"/>
+                        <connections>
+                            <action selector="cheapClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="VOt-1G-d7g"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="DP8-C5-zlF" secondAttribute="bottom" id="73Y-mG-PqV"/>
+                    <constraint firstItem="lMS-rk-ZD7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="KH1-ja-UC3"/>
+                    <constraint firstItem="nAC-f4-dBk" firstAttribute="leading" secondItem="lMS-rk-ZD7" secondAttribute="trailing" id="PQO-lc-Ivb"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="lMS-rk-ZD7" secondAttribute="bottom" id="QrF-cr-Dtp"/>
+                    <constraint firstItem="i7M-q5-iaj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="X64-GE-OxE"/>
+                    <constraint firstItem="i7M-q5-iaj" firstAttribute="leading" secondItem="DP8-C5-zlF" secondAttribute="trailing" id="Z4A-4i-WRn"/>
+                    <constraint firstItem="nAC-f4-dBk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="b3t-v3-ZOx"/>
+                    <constraint firstItem="lMS-rk-ZD7" firstAttribute="width" secondItem="DP8-C5-zlF" secondAttribute="width" id="cw8-ko-z0b"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="i7M-q5-iaj" secondAttribute="bottom" id="e36-M9-CmF"/>
+                    <constraint firstItem="nAC-f4-dBk" firstAttribute="width" secondItem="DP8-C5-zlF" secondAttribute="width" id="fRt-w5-FXD"/>
+                    <constraint firstItem="i7M-q5-iaj" firstAttribute="width" secondItem="DP8-C5-zlF" secondAttribute="width" id="hqP-91-3MO"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="nAC-f4-dBk" secondAttribute="trailing" id="i8c-GM-zFV"/>
+                    <constraint firstItem="DP8-C5-zlF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="icF-xM-26Q"/>
+                    <constraint firstItem="lMS-rk-ZD7" firstAttribute="leading" secondItem="i7M-q5-iaj" secondAttribute="trailing" id="ngs-em-nIZ"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="nAC-f4-dBk" secondAttribute="bottom" id="r9C-KG-N6o"/>
+                    <constraint firstItem="DP8-C5-zlF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="xOG-w6-xwe"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="categaryBtn" destination="DP8-C5-zlF" id="guf-Kn-LY2"/>
+                <outlet property="cheap" destination="nAC-f4-dBk" id="NAP-GN-mB7"/>
+                <outlet property="mybjia" destination="lMS-rk-ZD7" id="929-Ow-dWp"/>
+                <outlet property="shoppingCart" destination="i7M-q5-iaj" id="I0v-my-La9"/>
+            </connections>
+            <point key="canvasLocation" x="56" y="284"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_tabbar_homepage_selected" width="26" height="26"/>
+    </resources>
+</document>
