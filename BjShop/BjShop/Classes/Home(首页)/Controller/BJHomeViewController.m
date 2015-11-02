@@ -167,7 +167,7 @@ const NSInteger secondSection = 1;
             static NSString *promoID = @"cell1";
             BJHomePromoCell *cell = [tableView dequeueReusableCellWithIdentifier:promoID];
             if (!cell) {
-                cell = [[BJHomePromoCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:promoID];
+                cell = [[[NSBundle mainBundle] loadNibNamed:@"BJHomePromoCell" owner:self options:nil] firstObject];
             }
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
     
@@ -178,7 +178,7 @@ const NSInteger secondSection = 1;
             static NSString *toolbarID = @"cell2";
             BJHomeToolbarCell *cell = [tableView dequeueReusableCellWithIdentifier:toolbarID];
             if (!cell) {
-                cell = [[BJHomeToolbarCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:toolbarID];
+                cell = [[[NSBundle mainBundle] loadNibNamed:@"BJHomeToolbarCell" owner:self options:nil] firstObject];
                 
             }
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
@@ -193,7 +193,7 @@ const NSInteger secondSection = 1;
             static NSString *goodsID = @"BJHomeGoodsCell";
             BJHomeGoodsCell *cell = [tableView dequeueReusableCellWithIdentifier:goodsID];
             if (!cell) {
-                cell = [[BJHomeGoodsCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:goodsID];
+                cell = [[[NSBundle mainBundle] loadNibNamed:@"BJHomeGoodsCell" owner:self options:nil] firstObject];
             }
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
             return cell;
