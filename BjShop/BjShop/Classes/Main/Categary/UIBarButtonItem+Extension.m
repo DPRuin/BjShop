@@ -28,7 +28,7 @@
     [btn setImage:[UIImage imageNamed:image] forState:UIControlStateNormal];
     [btn setImage:[UIImage imageNamed:highlightImage] forState:UIControlStateHighlighted];
     // 设置尺寸
-    // btn.size = btn.currentImage.size;
+    btn.size = btn.currentImage.size;
     return [[UIBarButtonItem alloc] initWithCustomView:btn];
 
 }

@@ -9,8 +9,9 @@
 
 #define BJColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
 #define BJGlobalBg BJColor(230, 230, 230)
-
 #define BJGreenColor BJColor(32, 191, 179)
+#define BJNavColor BJColor(20, 56, 15)
+
 
 // 屏幕大小尺寸
 #define screen_width [UIScreen mainScreen].bounds.size.width

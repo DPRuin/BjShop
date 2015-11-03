@@ -48,8 +48,11 @@ const NSInteger secondSection = 1;
  */
 - (void)setupNavItem
 {
+    // 设置导航栏背景
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"bg_navigationBar_normal"] forBarMetrics:UIBarMetricsDefault];
+    
     // logo
-    UIBarButtonItem *logoItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"icon_meituan_logo"] style:UIBarButtonItemStyleDone target:nil action:nil];
+    UIBarButtonItem *logoItem = [UIBarButtonItem itemWithTarget:nil action:nil Image:@"icon_meituan_logo" highlightImage:@"icon_meituan_logo"];
     logoItem.enabled = NO;
     self.navigationItem.leftBarButtonItem = logoItem;
     
@@ -60,7 +63,7 @@ const NSInteger secondSection = 1;
     searchBar.backgroundImage = [UIImage imageNamed:@"bg_login_textfield"];
     searchBar.tintColor = BJGreenColor;
     UIView *titleView = [[UIView alloc] init];
-    titleView.width = 200;
+    titleView.width = 230;
     titleView.height = 30;
     [titleView addSubview:searchBar];
     
@@ -68,8 +71,16 @@ const NSInteger secondSection = 1;
     [searchBar autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsZero];
     
     // 分类按钮
-    self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithTarget:self action:@selector(categaryClick:) Image:@"icon_sort" highlightImage:@"icon_sort_highlighted"];
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithTarget:self action:@selector(categoryClick) Image:@"icon_sort_highlighted" highlightImage:@"icon_sort_highlighted"];
     
+}
+
+- (void)categoryClick
+{
+    // modal分类控制器
+    BJNavigationController *categaryNav = [[BJNavigationController alloc] initWithRootViewController:[[BJCategaryViewController alloc] init]];
+    categaryNav.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+    [self presentViewController:categaryNav animated:YES completion:nil];
 }
 
 #pragma mark - BJHomeToolbarCellDelegate
