@@ -17,6 +17,7 @@
 {
     UINavigationBar *navigationBar = [UINavigationBar appearance];
     [navigationBar setBackgroundImage:[UIImage imageNamed:@"bg_navigationBar"] forBarMetrics:UIBarMetricsDefault];
+    navigationBar.translucent = NO;
 }
 
 - (void)viewDidLoad {

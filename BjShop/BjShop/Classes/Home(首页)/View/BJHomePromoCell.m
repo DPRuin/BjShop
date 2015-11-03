@@ -10,14 +10,6 @@
 
 @implementation BJHomePromoCell
 
-- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
-{
-    if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
-        NSLog(@"11111");
-    }
-    return self;
-}
-
 - (void)awakeFromNib {
     NSLog(@"999999");
     // Initialization code

@@ -42,6 +42,7 @@ const NSInteger secondSection = 1;
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
+
 #pragma mark - 初始化操作
 /**
  *  初始化导航栏
@@ -157,6 +158,16 @@ const NSInteger secondSection = 1;
     [searchBar resignFirstResponder];
 }
 
+/**
+ *  搜索框右边取消按钮点击了就会调用
+ */
+- (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar
+{
+    [searchBar resignFirstResponder];
+    
+    searchBar.text = nil;
+}
+
 #pragma mark - Table view data source
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 
@@ -168,14 +179,14 @@ const NSInteger secondSection = 1;
         return 1;
     }
     
-    return 5;
+    return 1;
 }
 
 
 - (id)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     switch (indexPath.section) {
         case firstSection: {
-            static NSString *promoID = @"cell1";
+            static NSString *promoID = @"BJHomePromoCell";
             BJHomePromoCell *cell = [tableView dequeueReusableCellWithIdentifier:promoID];
             if (!cell) {
                 cell = [[[NSBundle mainBundle] loadNibNamed:@"BJHomePromoCell" owner:self options:nil] firstObject];
@@ -186,7 +197,7 @@ const NSInteger secondSection = 1;
             break;
         }
         case secondSection: {
-            static NSString *toolbarID = @"cell2";
+            static NSString *toolbarID = @"BJHomeToolbarCell";
             BJHomeToolbarCell *cell = [tableView dequeueReusableCellWithIdentifier:toolbarID];
             if (!cell) {
                 cell = [[[NSBundle mainBundle] loadNibNamed:@"BJHomeToolbarCell" owner:self options:nil] firstObject];
@@ -226,17 +237,14 @@ const NSInteger secondSection = 1;
             break;
         }
         default: {
-            return 70;
+            return 300;
             break;
         }
     }
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
-    if (section == firstSection) {
-        return 1;
-    }
-    
+    if (section == firstSection) return 1;
     return 5;
 }
 
