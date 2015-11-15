@@ -20,6 +20,8 @@
 #import "UIBarButtonItem+Extension.h"
 #import "UIView+Extension.h"
 #import "UIView+AutoLayout.h"
+#import "HttpTool.h"
+#import "GetURLString.h"
 
 
 const NSInteger firstSection = 0;
@@ -33,13 +35,11 @@ const NSInteger secondSection = 1;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     // 初始化导航栏
     [self setupNavItem];
-
-    // self.clearsSelectionOnViewWillAppear = NO;
-
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    // 添加服务器数据
+    [self loadMoreGoods];
 }
 
 
@@ -124,6 +124,17 @@ const NSInteger secondSection = 1;
     }
 }
 
+#pragma - mark - 与服务器交互
+- (void)loadMoreGoods
+{
+    NSString *urlStr = [GetURLString sharedGetURLString].URLGoodList;
+    // 请求参数
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    params[@"id"] =
+    
+    //[HttpTool get:urlStr params:<#(NSMutableDictionary *)#> success:<#^(id json)success#> failure:<#^(NSError *error)failure#>];
+}
+
 #pragma mark - UISearchBarDelegate
 /**
  *  键盘弹出：搜索框文字开始编辑
@@ -171,7 +182,7 @@ const NSInteger secondSection = 1;
 #pragma mark - Table view data source
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 
-    return 5;
+    return 3;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {

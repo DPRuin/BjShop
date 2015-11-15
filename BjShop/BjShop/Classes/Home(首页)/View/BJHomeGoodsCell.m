@@ -19,6 +19,7 @@
 
 static NSString * const reuseIdentifier = @"BJHomeGoodsCollectionViewCell";
 
+
 - (void)awakeFromNib {
     // 1.设置流动布局
     UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
@@ -38,6 +39,9 @@ static NSString * const reuseIdentifier = @"BJHomeGoodsCollectionViewCell";
     self.goodsCollectionView.dataSource = self;
 }
 
+#pragma mark - 与服务器交互
+
+
 #pragma mark - UICollectionViewDataSource
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
@@ -54,9 +58,6 @@ static NSString * const reuseIdentifier = @"BJHomeGoodsCollectionViewCell";
 
 
 #pragma mark - UICollectionViewDelegate
-
-
-
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
 
